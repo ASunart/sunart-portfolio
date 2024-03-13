@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 14.89">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: .01em;
+      }
+
+      .cls-5 {
+        fill: #ff4900;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-7 {
+        font-family: Lato-LightItalic, Lato;
+        font-size: 2.39px;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      .cls-7, .cls-6, .cls-8 {
+        fill: #f9f9f9;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        font-family: RethinkSans-Bold, 'Rethink Sans';
+        font-size: 11.4px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-5" d="m11.74,7.88h-4.03c-.48,0-.87-.39-.87-.87V2.99c0-.53.47-.95,1-.86,2.43.42,4.34,2.35,4.76,4.76.09.52-.33.99-.86.99Z"/>
+    <path class="cls-6" d="m6.84,8.84v4.03c0,.48-.39.87-.87.87H1.95c-.53,0-.95-.47-.86-1,.42-2.43,2.35-4.34,4.76-4.76.52-.09.99.33.99.86Z"/>
+    <circle class="cls-6" cx="10.12" cy="11.17" r="2.57"/>
+    <circle class="cls-6" cx="3.57" cy="4.96" r="2.57"/>
+  </g>
+  <g>
+    <text class="cls-8" transform="translate(14.97 10.2)"><tspan x="0" y="0">Suna</tspan><tspan class="cls-2" x="25.85" y="0">r</tspan><tspan class="cls-4" x="29.86" y="0">t</tspan></text>
+    <text class="cls-7" transform="translate(15.94 13.79)"><tspan class="cls-1" x="0" y="0">F</tspan><tspan class="cls-9" x="1.18" y="0">r</tspan><tspan x="1.94" y="0">ont-end de</tspan><tspan class="cls-3" x="12.11" y="0">v</tspan><tspan x="13.16" y="0">eloper / UX Designer</tspan></text>
+  </g>
+</svg>
