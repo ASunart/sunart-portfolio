@@ -6,7 +6,7 @@ import { SocialBadge } from "./SocialBadge";
 
 export function Hero() {
     return (
-        <section className="flex flex-col items-center relative gap-6 px-4 mt-12 h-screen">
+        <section className="flex flex-col items-center relative gap-6 px-4 mt-12 h-[90dvh]">
             <Image
                 src="/points-orange.svg"
                 alt="Points Vector"
@@ -36,7 +36,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="absolute bottom-14 -right-1/4" />
+                className="absolute bottom-0 -right-1/4" />
         </section>
     )
 }
