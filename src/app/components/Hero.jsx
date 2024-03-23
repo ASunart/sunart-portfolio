@@ -22,7 +22,7 @@ export function Hero() {
             />
             <div className="flex flex-col lg:gap-6 lg:h-4/5 lg:justify-center">
                 <div className="flex flex-col gap-4 items-center lg:items-start lg:gap-4">
-                    <h1 className="font-extrabold text-[46px] text-center text-balance leading-none lg:text-[64px] lg:text-left">Hi there, <br className="hidden lg:block" /> I&apos;m Alejandro <span className="text-orange">Sunart</span></h1>
+                    <h1 className="font-extrabold text-[46px] text-center text-balance leading-none lg:text-[64px] lg:text-left">Hi there, <br className="hidden lg:block" /> I&apos;m Alejandro <span className="text-orange text-change"></span></h1>
                     <PositionSection />
                 </div>
 
