@@ -18,6 +18,7 @@ body {
 
 .image{
   box-shadow: 0px 0px 50px #FF4900;
+  animation: shadowAnimation 10s infinite;
 }
 
 .position-badge {
@@ -39,4 +40,24 @@ body {
   100% {
     content: "Solarte";
   }
+}
+
+@keyframes shadowAnimation {
+
+  0%, 100% {
+    box-shadow: 0 0 50px #FF4900; 
+  }
+
+  25% {
+    box-shadow: 10px 10px 50px #FF4900;
+  }
+
+  50% {
+    box-shadow: -10px -10px 50px #FF4900; 
+  }
+
+  75% {
+    box-shadow: 10px -10px 50px #FF4900;
+  }
+
 }
