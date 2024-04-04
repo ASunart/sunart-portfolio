@@ -1,17 +1,24 @@
-import { Inter } from "next/font/google";
+import { Footer } from "./components/Footer";
+import { TopBar } from "./components/TopBar";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sunart",
-  description: "Sunart Front-end developer & UX Designer portfolio",
+  description: "Juan Alejandro Solarte Rodriguez (Sunart) Front-end developer & UX/UI Designer portfolio",
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <TopBar />
+        <main className="flex flex-col gap-16 px-4 pb-4 lg:px-16 lg:gap-36 relative overflow-hidden">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
