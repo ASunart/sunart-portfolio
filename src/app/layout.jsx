@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <TopBar />
-        <main className="px-4 lg:px-16">
+        <main className="flex flex-col gap-16 px-4 lg:px-16">
           {children}
         </main>
       </body>

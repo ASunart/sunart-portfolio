@@ -6,13 +6,13 @@ import { SocialBadge } from "./SocialBadge";
 
 export function Hero() {
     return (
-        <section className="flex flex-col items-center relative gap-6 mt-12 h-[90dvh] lg:items-start lg:flex-row-reverse lg:justify-between">
+        <section className="flex flex-col items-center overflow-hidden relative gap-6 lg:items-start lg:flex-row-reverse lg:justify-between">
             <Image
                 src="/points-orange.svg"
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="absolute -top-20 -left-1/4 lg:top-0 lg:-left-12" />
+                className="relative -top-2 -left-1/3 lg:top-0 lg:-left-12" />
             <Image
                 src="/image_card.webp"
                 alt="Alejandro Solarte Image"
@@ -22,7 +22,7 @@ export function Hero() {
             />
             <div className="flex flex-col gap-4 lg:gap-6 lg:h-4/5 lg:justify-center">
                 <div className="flex flex-col gap-4 items-center lg:items-start lg:gap-4">
-                    <h1 className="font-extrabold text-[46px] text-center text-balance leading-none lg:text-[64px] lg:text-left">Hi there, <br className="hidden lg:block" /> I&apos;m Alejandro <span className="text-orange text-change"></span></h1>
+                    <h1 className="font-extrabold text-[44px] text-center text-balance leading-none lg:text-[64px] lg:text-left">Hi there, <br className="hidden lg:block" /> I&apos;m Alejandro <span className="text-orange text-change"></span></h1>
                     <PositionSection />
                 </div>
 
@@ -39,7 +39,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="absolute bottom-2 -right-1/4 lg:-right-16 lg:bottom-12 overflow-hidden" />
+                className="relative -bottom-2 -right-1/3 lg:-right-16 lg:bottom-12 overflow-hidden" />
         </section>
     )
 }
