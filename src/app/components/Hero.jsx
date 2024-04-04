@@ -12,7 +12,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="relative -top-2 -left-1/3 lg:-left-12" />
+                className="relative -top-2 -left-1/3 lg:-left-12 lg:absolute" />
             <Image
                 src="/image_card.webp"
                 alt="Alejandro Solarte Image"
@@ -39,7 +39,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:bottom-12 overflow-hidden" />
+                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:bottom-12 lg:absolute overflow-hidden" />
         </section>
     )
 }
