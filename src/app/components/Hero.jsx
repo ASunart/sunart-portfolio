@@ -6,13 +6,13 @@ import { SocialBadge } from "./SocialBadge";
 
 export function Hero() {
     return (
-        <section className="flex flex-col items-center overflow-hidden relative gap-4 lg:items-start lg:flex-row-reverse lg:justify-between">
+        <section className="flex flex-col items-center overflow-hidden relative gap-4 lg:items-center lg:flex-row-reverse lg:justify-between lg:mt-14 lg:overflow-visible">
             <Image
                 src="/points-orange.svg"
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="relative -top-2 -left-1/3 lg:-left-12 lg:absolute" />
+                className="relative -top-2 -left-1/3 lg:-left-12 lg:-top-14 lg:absolute" />
             <Image
                 src="/image_card.webp"
                 alt="Alejandro Solarte Image"
@@ -39,7 +39,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:bottom-12 lg:absolute overflow-hidden" />
+                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:-bottom-12 -z-10 lg:absolute overflow-hidden" />
         </section>
     )
 }
