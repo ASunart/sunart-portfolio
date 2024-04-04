@@ -7,12 +7,15 @@
   --foreground: #080808;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--foreground);
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   color: white;
-  scroll-behavior: smooth;
 }
 
 .image {
