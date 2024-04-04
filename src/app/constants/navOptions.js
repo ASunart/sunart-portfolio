@@ -1,18 +1,22 @@
 export const NAV_OPTIONS = [
     {
         id: 1,
-        label: "About me"
+        label: "About me",
+        section: "#about",
     },
     {
         id: 2,
-        label: "Experience"
+        label: "Experience",
+        section: "#experience",
     },
     {
         id: 3,
-        label: "Projects"
+        label: "Projects",
+        section: "projects",
     },
     {
         id: 4,
-        label: "Contact"
+        label: "Contact",
+        section: "contact",
     },
 ]

@@ -39,7 +39,7 @@ export function Hero() {
                 alt="Points Vector"
                 width={232}
                 height={68}
-                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:-bottom-12 -z-10 lg:absolute overflow-hidden" />
+                className="relative -bottom-0 -right-[34%] lg:-right-16 lg:-bottom-28 -z-10 lg:absolute overflow-hidden" />
         </section>
     )
 }
