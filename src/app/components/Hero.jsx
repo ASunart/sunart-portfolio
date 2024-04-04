@@ -6,7 +6,7 @@ import { SocialBadge } from "./SocialBadge";
 
 export function Hero() {
     return (
-        <section className="flex flex-col items-center overflow-hidden relative gap-4 lg:items-center lg:flex-row-reverse lg:justify-between lg:mt-14 lg:overflow-visible">
+        <section className="hero flex flex-col items-center overflow-hidden relative gap-4 lg:items-center lg:flex-row-reverse lg:justify-between lg:mt-14 lg:overflow-visible">
             <Image
                 src="/points-orange.svg"
                 alt="Points Vector"

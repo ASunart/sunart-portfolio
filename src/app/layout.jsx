@@ -6,6 +6,8 @@ export const metadata = {
   description: "Juan Alejandro Solarte Rodriguez (Sunart) Front-end developer & UX/UI Designer portfolio",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

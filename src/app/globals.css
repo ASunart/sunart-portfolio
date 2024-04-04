@@ -15,9 +15,24 @@ body {
   scroll-behavior: smooth;
 }
 
-.image{
+.image {
   box-shadow: 0px 0px 50px #FF4900;
-  animation: shadowAnimation 10s infinite;
+}
+
+.hero, .top-bar {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .position-badge {
@@ -26,16 +41,19 @@ body {
 
 .text-change::before {
   content: "Sunart";
-  animation: text-animation 4s infinite;
+  animation: text-animation 3s infinite;
 }
+
 
 @keyframes text-animation {
   0% {
     content: "Solarte";
   }
+
   50% {
     content: "Sunart";
   }
+
   100% {
     content: "Solarte";
   }
@@ -43,8 +61,9 @@ body {
 
 @keyframes shadowAnimation {
 
-  0%, 100% {
-    box-shadow: 0 0 50px #FF4900; 
+  0%,
+  100% {
+    box-shadow: 0 0 50px #FF4900;
   }
 
   25% {
@@ -52,7 +71,7 @@ body {
   }
 
   50% {
-    box-shadow: -10px -10px 50px #FF4900; 
+    box-shadow: -10px -10px 50px #FF4900;
   }
 
   75% {
