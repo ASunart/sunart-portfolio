@@ -9,7 +9,7 @@ export const EXPERIENCE = [
         id: 2,
         position: 'UX/UI Designer',
         company: 'enerBit | August 2023 - December 2023',
-        description: <>We developed a solution to improve the user experience, focused on people with low digital literacy, for enerBit&apos;s mobile application, improving usability by&nbsp;25%.</>
+        description: <>We developed a solution to improve the user experience, focused on people with low digital literacy, for enerBit&apos;s mobile application, improving usability&nbsp;by&nbsp;25%.</>
     },
     {
         id: 3,
