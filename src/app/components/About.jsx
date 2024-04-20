@@ -4,7 +4,7 @@ export function About() {
     const boldText = "font-bold";
     const pElement = "font-light text-sm lg:text-lg lg:w-3/4";
     return (
-        <section className="relative flex" id="about">
+        <section className="relative flex">
             <div>
                 <span className="absolute block w-[154px] h-[154px] bg-light-blue blur-[100px] -z-10 -left-1/3 top-1/4 lg:-left-12"></span>
                 <h2 className="font-bold text-xl mb-2 lg:text-4xl lg:mb-4">About me</h2>
