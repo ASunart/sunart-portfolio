@@ -19,7 +19,7 @@ export function Hero() {
                         alt="Alejandro Solarte Image"
                         width={300}
                         height={384}
-                        className="relative rounded-full w-44 lg:w-80 grayscale hover:grayscale-0 transition-all"
+                        className="relative rounded-full w-44 lg:w-80 lg:grayscale hover:grayscale-0 transition-all"
                     />
                 </figure>
             <div className="flex flex-col gap-4 lg:gap-6 lg:h-4/5 lg:justify-center">
