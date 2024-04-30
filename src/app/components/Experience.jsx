@@ -1,9 +1,10 @@
 import Image from "next/image"
 import { EXPERIENCE } from "../constants/experience"
+import { Title } from "./Title"
 
 export function Experience() {
     return (
-        <section className="flex flex-col relative gap-2 lg:gap-4" id="experience">
+        <section className="flex flex-col relative gap-2 lg:gap-4">
             <Image
             alt="Orange ellipse"
             src={"/orange-ellipse.svg"}
@@ -11,7 +12,7 @@ export function Experience() {
             height={216}
             className="w-40 h-40 absolute -right-12 lg:w-56 lg:h-56 lg:-right-32"
             />
-            <h2 className="font-bold text-xl lg:text-4xl">Experience</h2>
+            <Title>Experience</Title>
             <div className="flex flex-col gap-4">
                 {
                     EXPERIENCE.map(({id, company, position, description}) => {
@@ -24,7 +25,7 @@ export function Experience() {
             src={"/blue-ellipse.svg"}
             width={216}
             height={216}
-            className="w-40 h-40 relative -left-20 bottom-20 p-0 -z-10 lg:w-56 lg:h-56 lg:-left-32"
+            className="w-40 h-40 absolute -left-20 -bottom-8 p-0 -z-10 lg:w-56 lg:h-56 lg:-left-32"
             />
         </section>
     )

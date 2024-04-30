@@ -1,7 +1,6 @@
 "use client"
 import { Cancel01Icon, Menu01Icon } from "hugeicons-react";
 import Image from "next/image";
-import { NAV_OPTIONS } from "../constants/navOptions";
 import { useState } from "react";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
 
