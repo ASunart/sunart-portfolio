@@ -49,6 +49,12 @@ body {
 }
 
 
+
+.text-change {
+  transition: all 0.5s;
+}
+
+
 @keyframes text-animation {
   0% {
     content: "Solarte";

@@ -1,8 +1,8 @@
 "use client"
-import { Cancel01Icon, Menu01Icon } from "hugeicons-react";
 import Image from "next/image";
 import { useState } from "react";
-import { SOCIAL_MEDIA } from "../constants/socialMedia";
+import { NavOptionsSection } from "./NavOptionsSection";
+
 
 export function TopBar() {
     const [menu, setMenu] = useState(false)
@@ -18,37 +18,13 @@ export function TopBar() {
                 width={90}
                 height={23}
                 className="lg:w-36 cursor-pointer hover:scale-105 transition-transform" />
-            <Menu01Icon
-                className="lg:hidden"
-                onClick={handleMenu}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none" className="lg:hidden" onClick={handleMenu}>
+                <path d="M4 5L20 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M4 12L20 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M4 19L20 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
             <NavOptionsSection state={menu} action={handleMenu} />
         </header>
     )
 }
 
-function NavOptionsSection({ state, action }) {
-    const menuState = state ? "absolute top-0 left-0 bg-black h-screen w-screen p-4 flex flex-col gap-5 lg:flex w-1/3 font-light text-base" : "hidden lg:flex lg:justify-between lg:w-1/3"
-    return (
-        <ul className={menuState}>
-            <Cancel01Icon
-                onClick={action}
-                className="lg:hidden"
-            />
-            {
-                SOCIAL_MEDIA.map(({ id, link, label, icon }) => {
-                    return <li
-                        key={id}
-                        className="cursor-pointer hover:text-orange">
-                        <a
-                            href={link}
-                            className="flex items-center gap-1 p-3 border-b border-b-orange border-opacity-70 lg:border-none"
-                            target="_blank">
-                            {icon}{label}
-                        </a>
-                    </li>
-                })
-            }
-        </ul>
-    )
-}
