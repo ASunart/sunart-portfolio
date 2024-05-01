@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function About() {
+export default function About() {
     const boldText = "font-bold";
     const pElement = "font-light text-sm lg:text-lg lg:w-3/4";
     return (
@@ -12,12 +12,13 @@ export function About() {
                 <br />
                 <p className={pElement}>I am oriented towards working in software development companies, user experience research and interactive experience&nbsp;design.</p>
                 <br />
-                <p className={pElement}>I have skills in <span className={boldText}>problem solving</span>, <span className={boldText}>programming</span>, <span className={boldText}>identification</span> and <span className={boldText}>analysis</span> of <span className={boldText}>user needs</span>, which allows me to focus on creating <span className={boldText}>intuitive digital experiences</span>, using data to make informed&nbsp;decisions.</p>
+                <p className={pElement}>I have skills in <span className={boldText}>problem solving</span>, <span className={boldText}>programming</span>, <span className={boldText}>identification</span> and <span className={boldText}>analysis</span> of <span className={`${boldText} w-40 h-40`}>user needs</span>, which allows me to focus on creating <span className={boldText}>intuitive digital experiences</span>, using data to make informed&nbsp;decisions.</p>
             </div>
             <Image
             src="/icon-big.svg"
             width={224}
             height={222}
+            loading="eager"
             alt="Sunart Icon"
             className="hidden lg:block lg:mr-20"
             />
