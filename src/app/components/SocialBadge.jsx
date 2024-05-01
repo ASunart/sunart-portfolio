@@ -1,4 +1,5 @@
 export function SocialBadge({ label, icon, link }) {
+    
     return (
         <a
             href={link}

@@ -29,8 +29,8 @@ export function ProjectCard({title, description, categories, image, grid_area, l
                 <Image
                     alt="Project"
                     src={image}
-                    width={1400}
-                    height={944}    
+                    width={1000}
+                    height={561}    
                     loading="lazy"                                                                                                    
                     className={`w-full lg:h-96 object-cover rounded-t-xl grayscale-0 lg:${cardHover ? "grayscale-0" : "grayscale"}`}
                 />                                                                                                                                          
