@@ -21,7 +21,7 @@ export default function Hero() {
                         width={1200}
                         height={1200}
                         loading="eager"
-                        className="relative -rotate-90 w-full top-4"
+                        className="relative w-full top-4"
                     />
                 </figure>
             <div className="flex flex-col gap-4 lg:gap-6 lg:h-4/5 lg:justify-center">
