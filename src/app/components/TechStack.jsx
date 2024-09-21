@@ -9,7 +9,7 @@ export function TechStack(params) {
                     TECH_STACK.map(({ id, name, icon }) => {
                         return (
                             <div key={id} className="flex items-center gap-4 p-4 rounded-lg bg-white border border-orange border-opacity-25 hover:border-opacity-100 bg-opacity-10 hover:bg-opacity-20 transition-colors">
-                                <img src={icon} alt={`${name} Icon`} className="w-10 h-10" />
+                                <img src={icon} alt={`${name} Icon`} className="w-10 h-10" loading="eager" width={40} height={40} />
                                 <p className="text-lg truncate">{name}</p>
                             </div>
                         )
