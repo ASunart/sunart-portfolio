@@ -14,7 +14,7 @@ export function TopBar() {
         <header className="top-bar flex z-10 justify-between items-center p-4 lg:px-16 lg:py-5 w-full sticky top-0 bg-white bg-opacity-[2%] backdrop-blur-[40px] border-b border-b-white border-opacity-10">
             <Image
                 alt="Sunart Logo"
-                src="/logo.svg"
+                src="/svg/logo.svg"
                 width={90}
                 height={23}
                 className="lg:w-36 cursor-pointer hover:scale-105 transition-transform" />

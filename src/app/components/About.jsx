@@ -13,14 +13,20 @@ export default function About() {
                 <p className={pElement}>I am oriented towards working in software development companies, user experience research and interactive experience&nbsp;design.</p>
                 <br />
                 <p className={pElement}>I have skills in <span className={boldText}>problem solving</span>, <span className={boldText}>programming</span>, <span className={boldText}>identification</span> and <span className={boldText}>analysis</span> of <span className={`${boldText} w-40 h-40`}>user needs</span>, which allows me to focus on creating <span className={boldText}>intuitive digital experiences</span>, using data to make informed&nbsp;decisions.</p>
+                <br />
+                <a href="/docs/Alejandro_Solarte_CV_english.pdf" target="_blank" rel="noopener noreferrer">
+                    <button>
+                        <span className="font-bold text-orange underline">Download CV</span>
+                    </button>
+                </a>
             </div>
             <Image
-            src="/icon-big.svg"
-            width={224}
-            height={222}
-            loading="eager"
-            alt="Sunart Icon"
-            className="hidden lg:block lg:mr-20"
+                src="/svg/icon-big.svg"
+                width={224}
+                height={222}
+                loading="eager"
+                alt="Sunart Icon"
+                className="hidden lg:block lg:mr-20"
             />
         </section>
     )

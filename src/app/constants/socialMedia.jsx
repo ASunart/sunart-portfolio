@@ -35,4 +35,5 @@ export const SOCIAL_MEDIA = [
       </>,
       link: "https://www.behance.net/alejandsolarte1"
    },
+   
 ]
