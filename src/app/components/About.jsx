@@ -1,8 +1,13 @@
+"use client"
 import Image from "next/image";
 
 export default function About() {
     const boldText = "font-bold";
     const pElement = "font-light text-sm lg:text-lg lg:w-3/4";
+    const downloadCV = () => {
+        window.open("/docs/Alejandro_Solarte_CV_english.pdf", "_blank");
+    }
+
     return (
         <section className="relative flex">
             <div>
@@ -14,11 +19,11 @@ export default function About() {
                 <br />
                 <p className={pElement}>I have skills in <span className={boldText}>problem solving</span>, <span className={boldText}>programming</span>, <span className={boldText}>identification</span> and <span className={boldText}>analysis</span> of <span className={`${boldText} w-40 h-40`}>user needs</span>, which allows me to focus on creating <span className={boldText}>intuitive digital experiences</span>, using data to make informed&nbsp;decisions.</p>
                 <br />
-                <a href="/docs/Alejandro_Solarte_CV_english.pdf" download="Alejandro_Solarte_CV_english.pdf">
-                    <button>
+                {/* <a href="/docs/Alejandro_Solarte_CV_english.pdf" download="Alejandro_Solarte_CV_english.pdf"> */}
+                    <button onClick={downloadCV}>
                         <span className="font-bold text-orange underline">Download CV</span>
                     </button>
-                </a>
+                {/* </a> */}
             </div>
             <Image
                 src="/svg/icon-big.svg"
