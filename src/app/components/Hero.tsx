@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { POSITIONS } from "../constants/positions";
+import { Position, POSITIONS } from "../constants/positions";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import { PositionBadge } from "./PositionBadge";
 import { SocialBadge } from "./SocialBadge";
@@ -53,7 +53,7 @@ function PositionSection() {
     return (
         <section className="flex gap-4">
             {
-                POSITIONS.map(({ id, position }) => {
+                POSITIONS.map(({ id, position } : Position) => {
                     return <PositionBadge key={id} position={position} />
                 })
             }

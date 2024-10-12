@@ -1,4 +1,11 @@
-export const EXPERIENCE = [
+export interface ExperienceData {
+    id: string,
+    position: string,
+    company: string,
+    description: JSX.Element | string,
+}
+
+export const EXPERIENCE: ExperienceData[] = [
     {
         id: crypto.randomUUID(),
         position: 'Web Developer & Designer',

@@ -1,4 +1,9 @@
-export const POSITIONS = [
+export interface Position {
+    id: number;
+    position: string;
+}
+
+export const POSITIONS : Position[] = [
     {
         id: 1,
         position: "UI/UX Designer"

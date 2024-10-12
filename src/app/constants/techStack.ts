@@ -1,4 +1,10 @@
-export const TECH_STACK = [
+export interface TechStackTypes {
+    id: string,
+    name: string,
+    icon: string
+}
+
+export const TECH_STACK: TechStackTypes[] = [
     {
         id: crypto.randomUUID(),
         name: 'HTML',

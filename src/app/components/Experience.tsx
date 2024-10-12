@@ -2,6 +2,7 @@ import Image from "next/image"
 import { EXPERIENCE } from "../constants/experience"
 import { Title } from "./Title"
 import { ExperienceCard } from "./ExperienceCard"
+import { ExperienceData } from "../constants/experience"
 
 export default function Experience() {
     return (
@@ -16,8 +17,13 @@ export default function Experience() {
             <Title>Experience</Title>
             <div className="flex flex-col gap-4">
                 {
-                    EXPERIENCE.map(({id, company, position, description}) => {
-                        return <ExperienceCard key={id} company={company} position={position} description={description} />
+                    EXPERIENCE.map(({id, company, position, description} : ExperienceData) => {
+                        return <ExperienceCard 
+                        key={id} 
+                        company={company} 
+                        position={position} 
+                        description={description} 
+                        />
                     })
                 }
             </div>

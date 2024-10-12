@@ -3,7 +3,13 @@ import { TopBar } from "./components/TopBar";
 import { Roboto } from 'next/font/google'
 import "./globals.css";
 
-export const metadata = {
+
+interface Metadata {
+  title: string;
+  description: string;
+}
+
+export const metadata: Metadata = {
   title: "Sunart",
   description: "Juan Alejandro Solarte Rodriguez (Sunart) Front-end developer & UX/UI Designer portfolio",
 };
@@ -14,7 +20,7 @@ const roboto = Roboto({
 })
 
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children } : { children: React.ReactNode }) {
   return (
     <>
       <html lang="en">

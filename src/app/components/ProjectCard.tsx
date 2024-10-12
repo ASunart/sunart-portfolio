@@ -2,15 +2,24 @@ import Image from "next/image"
 import { useState } from "react"
 import { Title } from "./Title"
 
-export function ProjectCard({title, description, categories, image, grid_area, link}) {
-    const [cardHover, setCardHover] = useState(false)
+interface ProjectCardProps {
+    title: string,
+    description: string,
+    categories: string[],
+    image: string,
+    grid_area: string,
+    link: string
+}
+
+export function ProjectCard({title, description, categories, image, grid_area, link} : ProjectCardProps) {
+    const [cardHover, setCardHover] = useState<boolean>(false)
 
     const handleCardHover = () => {
         setCardHover(prevState =>!prevState)
     }
 
     return (
-        <a className={`flex flex-col lg:h-max bg-white bg-opacity-5 rounded-xl border border-orange hover:scale-105 transition-all cursor-pointer border-opacity-25 backdrop-blur-[32px] grid-area ${grid_area}`}
+        <a className={`flex flex-col lg:h-max bg-white bg-opacity-5 rounded-xl border border-orange hover:scale-105 transition-all cursor-pointer border-opacity-25 hover:border-opacity-100 backdrop-blur-[32px] grid-area ${grid_area}`}
         target="_blank"
         href={link}
         onMouseEnter={handleCardHover}

@@ -1,4 +1,4 @@
-export function Contact(params) {
+export function Contact() {
     return (
         <section className='mb-8'>
             <h2 className="text-center font-bold text-xl mb-2 lg:text-4xl lg:mb-4">Get in touch</h2>
