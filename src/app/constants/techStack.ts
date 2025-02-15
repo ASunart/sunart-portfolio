@@ -53,7 +53,7 @@ export const TECH_STACK: TechStackTypes[] = [
     {
         id: crypto.randomUUID(),
         name: 'Github',
-        icon: '/svg/github-icon.svg'
+        icon: '/svg/github-filled-icon.svg'
     },
     {
         id: crypto.randomUUID(),
@@ -62,8 +62,8 @@ export const TECH_STACK: TechStackTypes[] = [
     },
     {
         id: crypto.randomUUID(),
-        name: 'Kotlin',
-        icon: '/svg/kotlin-icon.svg'
+        name: 'Java',
+        icon: '/svg/java-icon.svg'
     },
 
 ]
