@@ -16,7 +16,7 @@ export const EXPERIENCE: ExperienceData[] = [
         id: crypto.randomUUID(),
         position: 'Web UI Developer | New Generation',
         company: 'Globant | January 2025 - July 2025',
-        description: <>Joined the Public Web team for Sonesta International Hotels and quickly adapted to the team's workflow, technologies, and Agile processes, actively contributing to sprint demos and collaborative&nbsp;delivery cycles.</>
+        description: <>Joined the Public Web team for Sonesta International Hotels and quickly adapted to the team&apos;s workflow, technologies, and Agile processes, actively contributing to sprint demos and collaborative&nbsp;delivery cycles.</>
     },
     {
         id: crypto.randomUUID(),
