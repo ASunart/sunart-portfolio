@@ -19,7 +19,7 @@ export function ProjectCard({title, description, categories, image, grid_area, l
     }
 
     return (
-        <a className={`flex flex-col lg:h-max bg-white bg-opacity-5 rounded-xl border border-orange hover:scale-105 transition-all cursor-pointer border-opacity-25 hover:border-opacity-100 backdrop-blur-[32px] grid-area ${grid_area}`}
+        <a className={`flex flex-col lg:h-full bg-white bg-opacity-5 rounded-xl border border-orange hover:scale-105 transition-all cursor-pointer border-opacity-25 hover:border-opacity-100 backdrop-blur-[32px] grid-area ${grid_area}`}
         target="_blank"
         href={link}
         onMouseEnter={handleCardHover}
@@ -41,7 +41,7 @@ export function ProjectCard({title, description, categories, image, grid_area, l
                     width={1400}
                     height={944}    
                     loading="lazy"                                                                                                    
-                    className={`w-full lg:h-96 object-cover rounded-t-xl grayscale-0 lg:${cardHover ? "grayscale-0" : "grayscale"}`}
+                    className={`w-full lg:h-96 object-cover object-top rounded-t-xl grayscale-0 lg:${cardHover ? "grayscale-0" : "grayscale"}`}
                 />                                                                                                                                          
             </figure>
             <section className="p-4">

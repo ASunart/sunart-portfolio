@@ -16,11 +16,9 @@ export default function About() {
                 <br />
                 <p className={pElement}>I have skills in <span className={boldText}>problem solving</span>, <span className={boldText}>programming</span>, <span className={boldText}>identification</span> and <span className={boldText}>analysis</span> of <span className={`${boldText} w-40 h-40`}>user needs</span>, which allows me to focus on creating <span className={boldText}>intuitive digital experiences</span>, using data to make informed&nbsp;decisions.</p>
                 <br />
-                <a href="https://drive.google.com/file/d/1tqouAXDA_MffS6pIydzb5T54VgWSmLuS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button>
-                    <span className="font-bold text-orange hover:underline transition-all">View CV</span>
+                    <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="font-bold text-orange hover:underline transition-all">View CV</a>
                 </button>
-                </a>
             </div>
             <Image
                 src="/svg/icon-big.svg"

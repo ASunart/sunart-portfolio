@@ -8,15 +8,15 @@ export interface ExperienceData {
 export const EXPERIENCE: ExperienceData[] = [
     {
         id: crypto.randomUUID(),
-        position: 'Tech College Trainee | New Generation',
-        company: 'Globant | January 2025 - Present',
-        description: <>Currently training in emerging technologies such as Java and Web UI development, gaining hands-on experience and enhancing my technical skills to contribute effectively to&nbsp;future projects.</>
+        position: 'Web Developer & Designer',
+        company: 'Colombiatodo CI SAS | 2024 - Present',
+        description: <>Development and design of an ecommerce platform from scratch, using technologies such as React, Strapi, Next.js, Supabase, Firebase, MercadoPago, Jira to generate a complete solution, and friendly for both the end user and&nbsp;the customer.</>
     },
     {
         id: crypto.randomUUID(),
-        position: 'Web Developer & Designer',
-        company: 'Colombiatodo CI SAS | 2024 - Present',
-        description: <>Development and design of an ecommerce platform from scratch, using technologies such as React, Strapi, Next.js, Supabase, firebase, MercadoPago, to generate a complete solution, and friendly for both the end user and&nbsp;the customer.</>
+        position: 'Web UI Developer | New Generation',
+        company: 'Globant | January 2025 - July 2025',
+        description: <>Joined the Public Web team for Sonesta International Hotels and quickly adapted to the team's workflow, technologies, and Agile processes, actively contributing to sprint demos and collaborative&nbsp;delivery cycles.</>
     },
     {
         id: crypto.randomUUID(),
