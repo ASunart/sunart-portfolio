@@ -10,7 +10,7 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
       id: crypto.randomUUID(),
       label: "Linkedin",
       icon: "/svg/linkedin-icon.svg",
-      link: "https://www.linkedin.com/in/sunartdev-ux/"
+      link: "https://www.linkedin.com/in/jasolarter"
    },
    {
       id: crypto.randomUUID(),

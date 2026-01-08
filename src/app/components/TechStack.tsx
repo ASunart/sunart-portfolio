@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { TECH_STACK, TechStackTypes } from "../constants/techStack"
 
 export function TechStack() {

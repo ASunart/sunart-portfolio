@@ -6,6 +6,12 @@ export interface ExperienceData {
 }
 
 export const EXPERIENCE: ExperienceData[] = [
+        {
+        id: crypto.randomUUID(),
+        position: 'Frontend Developer & Designer',
+        company: 'Bosanet | 2025 - Present',
+        description: <>Transform ideas into scalable, user-centric solutions by aligning business objectives with development best practices across both internal tools and marketplace platforms.</>
+    },
     {
         id: crypto.randomUUID(),
         position: 'Web Developer & Designer',

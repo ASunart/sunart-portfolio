@@ -26,7 +26,7 @@ export default function RootLayout({ children } : { children: React.ReactNode })
       <html lang="en">
         <body>
           <TopBar />
-          <main className={`${roboto.className} flex flex-col gap-16 px-4 pb-4 lg:px-16 lg:gap-36 relative overflow-hidden`}>
+          <main className={`${roboto.className} flex flex-col gap-16 px-3 pb-4 lg:px-16 lg:gap-36 relative overflow-hidden`}>
             {children}
           </main>
           <Footer />
