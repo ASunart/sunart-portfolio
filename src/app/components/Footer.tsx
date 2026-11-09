@@ -1,20 +1,40 @@
-"use client";
+import { SOCIAL_MEDIA } from "../constants/socialMedia";
+import { SITE_NAME } from "../constants/site";
 
 export function Footer() {
-    const currentYear = new Date().getFullYear();
-    const backToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }
-    return (
-        <footer className="relative flex justify-around items-center w-full border-t border-white border-opacity-30 p-4">
-            <p className="font-light text-sm hidden lg:block lg:text-base">{currentYear}</p>
-            <p className="font-light cursor-pointer text-sm hidden lg:flex lg:text-base hover:text-orange"
-                onClick={backToTop}>Back to top <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
-                    <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg> </p>
-        </footer>
-    )
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-paper/10">
+      <div className="container-page flex flex-col gap-6 py-8 lg:flex-row lg:items-center lg:justify-between">
+        <p className="font-mono text-xs text-paper/50">
+          © {year} {SITE_NAME}
+        </p>
+
+        <nav aria-label="Social">
+          <ul className="flex flex-wrap gap-6">
+            {SOCIAL_MEDIA.map(({ id, label, link }) => (
+              <li key={id}>
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-h-[44px] items-center font-mono text-sm text-paper/70 transition-colors hover:text-signal"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <a
+          href="#main"
+          className="flex min-h-[44px] items-center font-mono text-sm text-paper/70 transition-colors hover:text-signal"
+        >
+          Back to top ↑
+        </a>
+      </div>
+    </footer>
+  );
 }

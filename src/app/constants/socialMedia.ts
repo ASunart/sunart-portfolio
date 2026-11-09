@@ -1,29 +1,23 @@
 export interface SocialMedia {
-   id: string,
-   label: string,
-   icon: string,
-   link: string
+  id: "linkedin" | "github" | "behance";
+  label: string;
+  link: string;
 }
 
 export const SOCIAL_MEDIA: SocialMedia[] = [
-   {
-      id: crypto.randomUUID(),
-      label: "Linkedin",
-      icon: "/svg/linkedin-icon.svg",
-      link: "https://www.linkedin.com/in/jasolarter"
-   },
-   {
-      id: crypto.randomUUID(),
-      label: "GitHub",
-      icon: "/svg/github-social-icon.svg",
-      link: "https://github.com/ASunart"
-
-   },
-   {
-      id: crypto.randomUUID(),
-      label: "Behance",
-      icon: "/svg/behance-icon.svg",
-      link: "https://www.behance.net/alejandsolarte1"
-   },
-   
-]
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/jasolarter",
+  },
+  {
+    id: "github",
+    label: "GitHub",
+    link: "https://github.com/ASunart",
+  },
+  {
+    id: "behance",
+    label: "Behance",
+    link: "https://www.behance.net/alejandsolarte1",
+  },
+];
